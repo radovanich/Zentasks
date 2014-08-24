@@ -17,8 +17,7 @@ public class Project extends Model {
     public Project(String name, String folder, User owner) {
         this.name = name;
         this.folder = folder;
-        this.members.add(owner); 
-        
+        this.members.add(owner);
     }
 
     public static Model.Finder<Long,Project> find = new Model.Finder(Long.class, Project.class);
